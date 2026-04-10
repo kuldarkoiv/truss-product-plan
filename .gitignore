@@ -1,0 +1,12 @@
+# Salajased andmed — mitte kunagi gitti
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Ajutised failid
+*.xlsx
+~$*
+sync_log.txt
