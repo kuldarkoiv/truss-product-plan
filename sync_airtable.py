@@ -13,11 +13,11 @@ TOKEN = os.environ.get("AIRTABLE_API_KEY")
 BASE_ID = os.environ.get("AIRTABLE_BASE_ID")
 
 PG = {
-    "host": os.environ.get("POSTGRES_HOST", "localhost"),
-    "port": int(os.environ.get("POSTGRES_PORT", 5432)),
-    "user": os.environ.get("POSTGRES_USER", "kuldar"),
-    "password": os.environ.get("POSTGRES_PASSWORD", ""),
-    "dbname": os.environ.get("POSTGRES_DB", "defaultdb"),
+    "host": os.environ.get("PG_HOST", "localhost"),
+    "port": int(os.environ.get("PG_PORT", 5432)),
+    "user": os.environ.get("PG_USER", "kuldar"),
+    "password": os.environ.get("PG_PASSWORD", ""),
+    "dbname": os.environ.get("PG_DATABASE", "defaultdb"),
     "sslmode": "require"
 }
 
