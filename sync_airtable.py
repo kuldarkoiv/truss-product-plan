@@ -12,6 +12,13 @@ load_dotenv()
 TOKEN = os.environ.get("AIRTABLE_API_KEY")
 BASE_ID = os.environ.get("AIRTABLE_BASE_ID")
 
+if not TOKEN:
+    print("VIGA: AIRTABLE_API_KEY pole seatud.")
+    raise SystemExit(1)
+if not BASE_ID:
+    print("VIGA: AIRTABLE_BASE_ID pole seatud.")
+    raise SystemExit(1)
+
 PG = {
     "host": os.environ.get("PG_HOST", "localhost"),
     "port": int(os.environ.get("PG_PORT", 5432)),
